@@ -1,0 +1,13 @@
+flowchart LR
+    User["User / Browser"]
+    Internet["Internet"]
+    SG["Security Group\nInbound: 80, 22"]
+    EC2["EC2 Instance\nAmazon Linux"]
+    Apache["Apache httpd\nPort 80"]
+    EBS["EBS Volume"]
+
+    User --> Internet
+    Internet --> SG
+    SG --> EC2
+    EC2 --> Apache
+    EC2 --> EBS

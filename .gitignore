@@ -1,0 +1,20 @@
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
+Agent.md
+
+# Secrets and local credentials
+*.pem
+*.key
+*.crt
+*.p12
+*.env
+.env.*
+credentials
+config
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
